@@ -65,7 +65,7 @@ public class UserData {
          * Создаем строку в необходимом формате и записываем ее в файл с названием, равным фамилии.
          * Если файл не существует, он будет создан.
          */
-        String dataString = lastName + firstName + middleName + ";" +
+        String dataString = lastName + ";" + firstName + ";" + middleName + ";" +
                 day + "." + month + "." + year + ";" +
                 formattedPhoneNumber + ";" + gender + "\n";
         try (FileWriter writer = new FileWriter(lastName + ".txt", true)) {
